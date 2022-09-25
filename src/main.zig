@@ -3,7 +3,7 @@ const c = @import("glfw3.zig");
 
 pub fn main() !void {
     // _ = try c.load("/opt/homebrew/opt/glfw/lib/libglfw.3.dylib");
-    _ = try c.load("/usr/lib/arm-linux-gnueabihf/libglfw.so.3.2");
+    _ = try c.load("libglfw.so.3");
 
     _ = c.glfwInit();
     defer c.glfwTerminate();
